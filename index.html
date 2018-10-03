@@ -22,6 +22,7 @@ body {
   top: 0;
   left: 0;
   transform: scale(1);
+  background-attachment: fixed;
 }
 
 .mycard {
@@ -34,6 +35,7 @@ body {
     border-radius: 10px;
 }
 
+
 .mycard:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -42,7 +44,7 @@ body {
     padding: 20px;
 }
 
-#name {
+.title {
   margin-top: 0.5em;
   color: #4F5C63;
   font-size: 2em;
@@ -50,10 +52,9 @@ body {
   letter-spacing: -0.025rem;
 }
 
-#title {
+.subtitle {
   font-size: 1.2em;
   color: #8797A1;
-  margin-top: -0.5em;
 }
 
 .divider {
@@ -73,6 +74,12 @@ body {
   font-size: 2em;
 }
 
+.item {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
 #profile-picture {
   width: 25%;
 }
@@ -83,17 +90,47 @@ body {
 <body>
 
 <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-<div class="mycard">
+<div class="mycard" id="main">
 <!---  <img src="img_avatar_.png" class="img-circle" alt="Avatar" style="width:100%"> -->
   <div class="container align-middle">
     <img src="img_avatar_.png" id="profile-picture" class="rounded-circle" alt="Avatar">
-    <p id="name"><b>Andrei Ushakov</b></h4>
-    <p id="title">Fullstack Web Developer</p>
+    <p class="title"><b>Andrei Ushakov</b></h4>
+    <p class="subtitle">Fullstack Web Developer</p>
     <div class="divider"></div>
     <div class="icons">
       <a href="https://www.linkedin.com/in/aushakov1/"<i class="fab fa-linkedin lg"></i></a>
       <a href="https://github.com/aushakov95"><i class="fab fa-github"></i></a>
     </div>
+  </div>
+</div>
+<div class="mycard">
+  <div class="container">
+    <p class="title">My Portfolio</p>
+    <div class="portfolioItems">
+      <a href="https://www.allblack.design" target="_blank">
+      <div class="row item">
+      <div class="col-md-6">
+        <img src="allblackdesignthumb.png" class="img-fluid" alt="www.allblack.design thumbnail">
+      </div>
+      <div class="col-md-6">
+        <p class="subtitle">allblack.design | E-Commerce webapp </p>
+      </div>
+      </div>
+      </a>
+      <div class="divider"></div>
+      <a href="https://www.dean-technologies.com/" target="_blank">
+      <div class="row item">
+      <div class="col-md-6">
+        <img src="deantechnologiesthumb.png" class="img-fluid" alt="www.dean-technologies.com thumbnail">
+      </div>
+      <div class="col-md-6">
+        <p class="subtitle">Dean Technologies | Managed Services Provider Website</p>
+      </div>
+      </div>
+      </a>
+    </div>
+
+
   </div>
 </div>
 </div>
