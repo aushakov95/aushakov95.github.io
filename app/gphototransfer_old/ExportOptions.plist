@@ -9,7 +9,7 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://www.andreiushakov.io/app/gphototransfer.ipa</string>
+		<string>https://www.andreiushakov.io/app/gphotoransfer.api</string>
 		<key>displayImageURL</key>
 		<string>https://www.andreiushakov.io/app/52x52.png</string>
 		<key>fullSizeImageURL</key>
